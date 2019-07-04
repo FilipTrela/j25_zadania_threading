@@ -8,7 +8,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int counter = 0;
         ZadanieSilnia[] zadanieSilnias = new ZadanieSilnia[5];
-        while (counter <= 5){
+        while (counter <= 4) {
             System.out.println("Podaj liczbę");
             zadanieSilnias[counter] = new ZadanieSilnia(Integer.parseInt(scanner.nextLine()));
             threads[counter] = new Thread(zadanieSilnias[counter]);
